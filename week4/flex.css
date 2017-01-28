@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	background: lightgray;
+}
+#main {
+	width: 80%;
+/*"margin: _ "auto"" - 2nd value makes div centered on page. */
+	margin: 1em auto;
+	background: white;
+	padding: 1em;
+	border: 1px none white;
+	border-radius: 3px;
+}
+#maincontent {
+	display: flex;
+	flex-flow: row-reverse wrap;
+	justify-content: flex-end;
+
+/*-webkit prefixes for "display:flex" etc. */
+	display: -webkit-flex;
+	-webkit-flex-flow: row-reverse wrap;
+	-webkit-justify-content: flex-end;
+}
+#articlelisting {
+	flex: 1 1 0;
+	-webkit-flex: 1 1 0;
+
+	display: flex;
+	flex-flow: column-reverse wrap;
+
+	display: -webkit-flex;
+	-webkit-flex-flow: column-reverse wrap;
+}
+article {
+	padding: 0 5em 1.2em 0;
+}
+article h3 {
+	margin: 0;
+}
+article time {
+	font-size: 0.8em;
+}
+article div {
+/*"display:none" makes you have to click headline link
+to see article, combined with "display:block" w/child div*/
+	display: none;
+	font-size: 0.9em;
+	columns: auto 2;
+/*-webkit prefixes for "columns:" etc. */
+	-moz-columns: auto 2;
+	-webkit-columns: auto 2;
+}
+/*Note: no space b/n ":target" & selector*/
+article:target {
+
+	order: 1;
+	background-color: #8d9db6;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+/*This displays (once clicked) the <p>
+inside the div inside the article*/
+article:target div {
+	display: block;
+}
+
+nav {
+	width: 180px;
+	padding: 0 1em 0 0;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	/*"list-style" assures no bullets on unordered list.*/
+	list-style: none;
+}
+/*Styles links w/spacing in block & w/border underline.*/
+nav ul li a {
+	display: block;
+	margin: 0;
+	padding: .25em;
+	border-bottom: 1px solid lightGray;
+}
+/*This keeps "Recent" indented and always black.*/
+nav ul li a.current {
+	color: black;
+	margin-left: 0.5em;
+}

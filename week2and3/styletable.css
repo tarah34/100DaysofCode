@@ -1,0 +1,24 @@
+table {
+  width: 200px;
+  /*height: 200px;*/
+  padding: 5px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 5px solid purple;
+}
+thead th {
+  text-align: left;
+  background-color: beige;
+}
+
+td {
+  text-align: right;
+}
+.odd {
+  background-color: tan;
+}
+.even {
+  background-color: lightgray;
+}

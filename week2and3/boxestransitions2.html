@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Boxes Layout</title>
+    <style type="text/css">
+.header, .footer {
+  background-color: #b2b2b2;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.one {
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    background-color: #80ced6;
+    border-radius: 3px;
+    border: 1px solid red;
+    border-style: none;
+    margin: 2px 1px;
+    float: left;
+}
+.two {
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    background-color: #fefbd8;
+    border-radius: 3px;
+    border: 1px solid red;
+    border-style: none;
+    margin: 2px 1px;
+    clear: left;
+    color: #80ced6;
+    -moz-transition: width 2s;
+    -webkit-transition: width 2s;
+    -o-transition: width 2s;
+    transition: width 2s;
+  }
+/* Mouse hover changes the width & background color. */
+  #two:hover {
+    background-color: #d5f4e6;
+    width: 856px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 3px;
+    clear: left;
+    border: 1px solid red;
+    border-style: none;
+    margin: 2px 1px;
+  }
+
+.three {
+    width: 150px;
+    height: 136px;
+    padding: 5px;
+    background-color: #d5f4e6;
+    border-radius: 50%;
+    border: 1px solid red;
+    border-style: none;
+    margin: 2px 1px;
+    text-align: center;
+    position: absolute;
+    -moz-transition-duration: 2s;
+    -webkit-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -moz-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    -moz-transition-delay: .5s;
+    -webkit-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay: .5s;
+
+  }
+/* This styling moves the circle right. */
+.four:hover .three {
+  left: 425px;
+}
+
+.four {
+    height: 200px;
+    padding: 5px;
+    background-color: #618685;
+    border-radius: 3px;
+    border: 1px solid red;
+    border-style: none;
+    margin: 2px 1px;
+    position: relative;
+  }
+
+
+  </style>
+  </head>
+  <body>
+    <div class="header">Welcome</div>
+    <div class="one">1</div>
+    <div class="two" id="two">2. Mouse over me!</div>
+
+  <div class="four">4
+    <div class="three" id="three">3</div>
+  </div>
+    <div class="footer">About</div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Table Selectors</title>
+    <link rel="stylesheet" href="styletableselectors.css">
+  </head>
+  <body>
+    <table id="3by4"class="">
+      <thead>
+        <th>Selector</th>
+        <th>Example</th>
+        <th>Example Description</th>
+        <th>I got it to work?</th>
+      </thead>
+
+      <tbody>
+        <tr class="odd">
+          <td>.class</td>
+          <td>.intro</td>
+          <td>Selects all elements with class="intro"</td>
+          <td><input type="checkbox"> Y/N</td>
+        </tr>
+
+        <tr class="even">
+          <td>#id</td>
+          <td>#firstname</td>
+          <td>Selects the element with the id="firstname"</td>
+          <td><input type="checkbox"> Y/N</td>
+        </tr>
+
+        <tr class="odd">
+          <td>*</td>
+          <td>*</td>
+          <td>Selects all elements</td>
+          <td><input type="checkbox"> Y/N</td>
+        </tr>
+
+        <tr class="even">
+          <td>element</td>
+          <td>p</td>
+          <td>Selects all &<;p> elements</td>
+          <td><input type="checkbox"> Y/N</td>
+        </tr>
+
+        <tr class="odd">
+          <td>element, element</td>
+          <td>div, p</td>
+          <td>Selects all &<;div> AND ALL &<;p> elements</td>
+          <td><input type="checkbox"> Y/N</td>
+        </tr>
+
+        <tr class="even">
+          <td>element element</td>
+          <td>div p</td>
+          <td>Selects all &<;p> elements INSIDE &<;div> elements</td>
+          <td><input type="checkbox"> Y/N</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </body>
+</html>

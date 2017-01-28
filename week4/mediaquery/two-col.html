@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My Exercise - Media Queries</title>
+<!-- This line of code <meta> sets up the media query. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: helvetica, sans-serif;
+			background-color: silver;
+		}
+		#main {
+			width: 90%;
+			margin: 0 auto;
+			background-color: white;
+			padding: 5px;
+			border: 1px none white;
+			border-radius: 2px;
+		}
+		section {
+			background-color: #d5f4e6;
+			float: right;
+			width: 75%;
+			/*margin: 2%;*/
+			padding: 0 1% 1% 1%;
+			border: 0px solid #fefbd8;
+			border-radius: 2px;
+		}
+
+	/*Floating each article left, & making
+	width+padding <50% lines them up as 2 columns. */
+		article {
+			float: left;
+			width: 43%;
+			padding: 2%;
+			background-color: #fefbd8;
+			margin: 0 1% 1% 0;
+		}
+/* Used to make sure no 'dangling pieces' on the articles.*/
+		article:nth-child(even) {
+			clear: left;
+		}
+		aside {
+			background-color: #618685;
+			float: left;
+			width: 18%;
+			/*margin: 1%;*/
+			padding: 1%;
+			border: 0px none white;
+			border-radius: 2px;
+		}
+		.clear {
+			clear: both;
+		}
+		footer {
+			border: 3px solid #d5f4e9;
+			border-radius: 5px;
+			background-color: #80ced6;
+			text-align: right;
+			width: 98%;
+			margin: 1px auto;
+			padding: 0px 5px;
+		}
+		@media screen and (max-width: 700px) {
+			section {
+				float: none;
+				width: 100%;
+				padding: 0;
+				/*width: 96%;
+				margin: auto;
+				padding: 1px 1px 1px 0px;*/
+			}
+			article {
+				float: none;
+				width: 94%;
+				padding: 1%;
+				margin: 1% 0% 1% 1%;
+			}
+			aside {
+				margin-top: 10px;
+				float: none;
+				width: 96%;
+				padding: 2%;
+			}
+			footer {
+				width: 96%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<header>
+			<h1>My Blog</h1>
+		</header>
+		<section>
+			<h2>Recent Articles</h2>
+			<article>
+				<h3>Headline 1</h3>
+				<p>Ea delenit ut iaceo quidem. Duis transverbero blandit tation te minim commoveo t.</p>
+			</article>
+			<article>
+				<h3>Headline 2</h3>
+				<p>Hendrerit secundum minim incassum valde vicis autem te. Comis capto feugiat wisi.</p>
+			</article>
+			<article>
+				<h3>Headline 3</h3>
+				<p>Te iriure in indoles blandit et epulae erat mos delenit nisl. Wisi aliquip susci.</p>
+			</article>
+			<article>
+				<h3>Headline 4</h3>
+				<p>Ea delenit ut iaceo quidem. Duis transverbero blandit tation te minim commoveo e.</p>
+			</article>
+		</section>
+		<aside>
+			<h2>Subscribe</h2>
+			<p>Sign up now to receive updates as we post new content:</p>
+			<input type="email" name="join" placeholder="email">
+		</aside>
+		<div class="clear"></div>
+		<footer>
+			<p>Best. Blog. Ever.</p>
+		</footer>
+	</div>
+</body>
+</html>

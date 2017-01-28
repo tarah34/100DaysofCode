@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/montserrat/Montserrat-Light.otf');
+  src: url('/montserrat/Montserrat-ExtraLight.otf');
+  src: url('/montserrat/MontserratAlternates-Light.otf');
+  src: url('/montserrat/MontserratAlternates-ExtraLight.otf');
+  src: url('/montserrat/MontserratAlternates-Thin.otf');
+}
+body {
+  font-family: Montserrat-Light, cursive;
+  background-color: #f7cac9;
+}
+
+h1 {
+  color: #034f84;
+}
+h2 {
+  color: #f7786b;
+}
+
+.box {
+  width: 140px;
+  height: 140px;
+  border: 5px solid #034f84;
+  border: none;
+  color: white;
+  /*Moved this into the IDs of each box.
+  float: left;*/
+  margin: 10px;
+  font-size: larger;
+
+}
+/*If I separate the "float: left" out of the .box class
+to its own individual additional class, then the float
+left doesn't work, all the boxes line up down the page. WHY? */
+
+/*This code here doesn't do what i want it to do.*/
+/*.left {
+float: left;
+}*/
+
+.clear {
+  clear: both;
+}
+
+#A {
+  background-color: #c94c4c;
+  float: left;
+}
+
+#B {
+  background-color: #92a8d1;
+  float: left;
+}
+#C {
+  background-color:#b1cbbb;
+  float: left;
+}
+#D {
+  background-color: #80ced6;
+  float: left;
+}
+/*Section 2 Styling*/
+
+#container1 {
+  position: relative;
+  border: 2px solid gray;
+  width: 100%;
+  height: 100%;
+  margin: 5px 0px;
+}
+#A2 {
+  background-color: #c94c4c;
+  position: relative;
+  left: 45%;
+  top: 50px;
+}
+
+#B2 {
+  background-color: #92a8d1;
+  position: relative;
+  left: 25%;
+  top: 1px;
+}
+
+/*Why does C box go outside of the container div
+when resizing the browser window? Is it not relative
+to the container div?  What is it relative to?*/
+#C2 {
+  background-color:#b1cbbb;
+  position: relative;
+  left: 75%;
+  top: -150px;
+}
+#D2 {
+  background-color: #80ced6;
+  position: relative;
+  left: 45%;
+  bottom: 50px;
+}
+
+#h2absolute {
+  position: absolute;
+  left: 50%;
+  margin-left: -87.5px;
+  width: 170px;
+  /*height: auto;
+  border: 1px none #060; */
+  border: 5px 5px 5px 5px;
+  margin: 10px auto 0px auto;
+}
+#container2 {
+  position: relative;
+  border: 2px solid gray;
+  width: 100%;
+  height: 500px;
+  margin: 5px 0px;
+}
+
+#A3 {
+  background-color: #c94c4c;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+#B3 {
+  background-color: #92a8d1;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+}
+#C3 {
+  background-color:#b1cbbb;
+  position: absolute;
+  left: 75%;
+  top: 40%;
+}
+#D3 {
+  background-color: #80ced6;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+}

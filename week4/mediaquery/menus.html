@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My 2 Menu Lists</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <style>
+  ol, ul {
+    list-style: none;
+  }
+  body {
+    font-family: "Trebuchet MS";
+  }
+  #mainMenu {
+    margin: 10px;
+    width: 900px;
+  }
+  #mainMenu li {
+    display: block;
+    width: 120px;
+    float: left;
+    margin-left: 2px;
+    border: 1px solid #000;
+  }
+  #mainMenu a {
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+    background-color: deeppink;
+    color: black;
+  }
+  #mainMenu a:hover {
+    background-color: hotpink;
+  }
+  .clear {
+    clear: both;
+  }
+/*Now we're styling the 2nd menu with new ID. */
+  }
+  #mainMenu2 {
+    margin: 10px;
+  }
+  #mainMenu2 li {
+    display: block;
+    width: 120px;
+    border: 1px solid #000;
+    border-top: 0px;
+    letter-spacing: .18em;
+
+  }
+  #mainMenu2 li:first-child {
+    border-top: 1px solid #000;
+  }
+
+  #mainMenu2 a {
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+    background-color: slateblue;
+    color: white;
+  }
+  #mainMenu2 a:hover {*/
+    color: black;
+  }
+  </style>
+  <body>
+<div class="start">
+  <ul id="mainMenu">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+<div class="clear"> </div>
+<div class="next">
+  <ul id="mainMenu2">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+  </body>
+</html>

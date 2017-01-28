@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Full Width Layouts</title>
+  <script type="text/css"></script>
+  <style>
+/*Resetting page defaults*/
+  * {
+    margin: 0; padding: 0; border: 0;
+    font-family: Montserrat-Light, sans-serif;
+    color: #2F4F4F;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/montserrat/Montserrat-Light.otf');
+  src: url('/montserrat/Montserrat-ExtraLight.otf');
+  src: url('/montserrat/MontserratAlternates-Light.otf');
+  src: url('/montserrat/MontserratAlternates-ExtraLight.otf');
+  src: url('/montserrat/MontserratAlternates-Thin.otf');
+  }
+
+#wrapper {
+  border: 1px solid #000;
+}
+#header {
+  border-bottom: 3px solid #588c7e;
+  padding: 10px;
+  background-color: #f2e394;
+/*This background-image code is not working???*/
+  /*background-image: url(/media/IMG_2727.jpg);*/
+}
+
+#main {
+  /*This background-image code is not working?*/
+  /*NOW IT IS... BUT WHY?*/
+  background-image: url(media/hex588c7e_200.jpg);
+  background-repeat: repeat-y;
+}
+#menu {
+  width: 180px;
+  float: left;
+  padding: 10px;
+  border-right: 1px solid #588c7e;
+
+}
+#content {
+  margin-left: 200px;
+  border-left: 1px solid #588c7e;
+  padding: 10px;
+  line-height: 2em;
+}
+
+.clearer {
+  clear: both;
+}
+
+#footer {
+  border-top: 3px solid #588c7e;
+  padding: 10px;
+  background-color: #f2e394;
+}
+
+  </style>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <h1>Two-column FLUID layout.</h1>
+      </div>
+      <section id="main">
+        <div id="menu">
+          <h2>Menu</h2>
+          <p>This column is fixed.</p>
+          <p>This column is fixed.</p>
+          <p>This column is fixed.</p>
+          <p>This column is fixed.</p>
+        </div>
+        <div id="content">
+          <h2>Content</h2>
+          <p>Fluid column. Column is fluid. Lorem ipsum dolor sit amet...<br> Column is fluid. <br>Column is fluid. <br>Column is fluid. <br>Column is fluid. <br>Column is fluid.</p>
+
+        </div>
+        <div class="clearer"></div>
+      </section>
+      <footer id="footer">Copyright 2017, No rights reserved. Feel free to use.</footer>
+    </div>
+  </body>
+</html>

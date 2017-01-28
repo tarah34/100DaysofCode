@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>2 Column fixed template</title>
+  <script type="text/css"></script>
+  <style>
+  /*Resetting page defaults*/
+    * {
+      margin: 0; padding: 0; border: 0;
+      font-family: Montserrat-Light, sans-serif;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/montserrat/Montserrat-Light.otf');
+    src: url('/montserrat/Montserrat-ExtraLight.otf');
+    src: url('/montserrat/MontserratAlternates-Light.otf');
+    src: url('/montserrat/MontserratAlternates-ExtraLight.otf');
+    src: url('/montserrat/MontserratAlternates-Thin.otf');
+    }
+
+  #wrapper {
+    border: 1px solid #000;
+/*Comment out these two lines - width & margin
+ is you want a fluid contents.*/
+    width: 850px;
+    margin: auto;
+  }
+  #header {
+    border-bottom: 3px solid #588c7e;
+    padding: 10px;
+    background-color: #f2e394;
+    text-align: center;
+    color: #2F4F4F;
+  }
+  #main {
+    background-image: url(media/hex588c7e_200.jpg);
+    background-repeat: repeat-y;
+    /*background-color: #d96459;*/
+  }
+
+  #menu {
+    width: 180px;
+    float: left;
+    padding: 10px;
+    color: #2F4F4F;
+  }
+
+  #content {
+    margin-left: 200px;
+    padding: 10px;
+    position: relative;
+    color: #2F4F4F;
+  }
+  .clearer {
+    clear: both;
+  }
+  #footer {
+  border-top: 3px solid #588c7e;
+  padding: 10px;
+  background-color: #e96459;
+  text-align: center;
+  color: #2F4F4F;
+  }
+
+    </style>
+  </head>
+  <body>
+  <div id="wrapper">
+    <header id="header">
+      <h1>2-column FIXED template layout</h1>
+    </header>
+    <section id="main">
+      <nav id="menu">
+        <h2>Menu</h2>
+        <p>This menu column is fixed.</p>
+      </nav>
+      <article id="content">
+        <h2>Content</h2>
+        <p>Fixed column. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </article>
+      <div class="clearer">
+      </div>
+    </section>
+    <footer id="footer">Copyright 2017, No rights reserved. Feel free to use.</footer>
+  </div>
+  </body>
+</html>

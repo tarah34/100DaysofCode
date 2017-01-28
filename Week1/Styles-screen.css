@@ -1,0 +1,60 @@
+#print {
+  display: none;
+}
+
+#line-through {
+  text-decoration: line-through;
+}
+
+body {
+  padding: 5px 5px 5px 15px;
+}
+
+pre {
+  background-image: url(media/sky2.png);
+  background-repeat: no-repeat;
+}
+
+.red {
+  color: red;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2') format ('woff2');
+  font-weight: normal;
+  font-stretch: normal;
+}
+
+#h1SubHead {
+  text-indent: 150px;
+}
+
+#heck {
+  font-weight: lighter;
+  }
+
+* {
+    font-family: Montserrat; Georgia, serif;
+    font-weight: lighter;
+}
+
+h1 {
+  font-family: Tangerine;
+  font-weight: 900;
+  font-size: 34pt;
+  letter-spacing: .02em;
+  text-shadow: 1px 1px 1px #FFAE00;
+}
+
+#table2 {
+  word-spacing: -.25em;
+  text-shadow: 1em;
+}
+
+th {
+  text-transform: uppercase;
+}
+img {
+}
