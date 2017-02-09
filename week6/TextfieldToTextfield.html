@@ -22,8 +22,11 @@ function changeBg() {
 		//We have to change the value of the input data into a variable.
 		//That variable we place inside the ()next to the function name.
 		var elemMonthNumber = document.dateForm.MonthNumber.value;
-		month = monthAsString(elemMonthNumber)
+		var cleanMonthNumber = parseInt(elemMonthNumber);
+		var month = (cleanMonthNumber >=1 && cleanMonthNumber <= 12) ? monthAsString(cleanMonthNumber) : "Bad number";
+
 		document.dateForm.MonthName.value = month
+
 
 	}
 
