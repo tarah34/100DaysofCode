@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Coding You Don't Know JavaScript</title>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+      var taraString = "Hollander";
+      var freedom = "freedom";
+    </script>
+    <style media="screen" type="text/css">
+
+    @font-face {
+      font-family: 'Montserrat';
+      src: url('/montserrat/Montserrat-Light.otf');
+      src: url('/montserrat/Montserrat-ExtraLight.otf');
+      src: url('/montserrat/MontserratAlternates-Light.otf');
+      src: url('/montserrat/MontserratAlternates-ExtraLight.otf');
+      src: url('/montserrat/MontserratAlternates-Thin.otf');
+    }
+    body {
+      font-family: Montserrat-Light;
+      background-color: slategray;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Coding while reading You Don't Know JavaScript</h1>
+    <h2>And working through JS course.  Let's also look at String Properties and Methods.</h2>
+    <p>Work with & understand "property," "methods" & manipulating "strings"</p>
+    <p>I've already defined the variable taraString as the string: "Hollander" and var freedom = "freedom"</p>
+    <p>Output on the right will be the result of code: </p>
+    <p><code>document.write(taraString.length);</code>
+    <script type="text/javascript">document.write(taraString.length);</script></p>
+    <p>The JS method "write" writes out the property "length" of the object, actually here variable, "taraString".</p>
+    <h3>What else can we do with these string properties? Can we turn them into variables, or new strings?  How would that be written?</h3>
+  <hr>
+    <p>"substring" w/ startPosition (count characters) and endPosition (1 character before that declared 'endPosition'):</p>
+    <p><code><pre>  document.write(taraString.substring(3, 7));</pre></code>
+      <script type="text/javascript">document.write(taraString.substring(3, 7));</script></p>
+    <p>"substr" is similar but the 2nd value 'length' is saying for how many characters (not 1 before the length count):</p>
+    <p><code><pre>  document.write(freedom.substr(0,3));</pre></code>
+    <script type="text/javascript">document.write(freedom.substr(0,4));</script></p>
+    <p><code><pre>  document.write(freedom.toUpperCase());</pre></code>
+    <script type="text/javascript">document.write(freedom.toUpperCase());</script></p>
+
+    <p>Next I'll create arguments that assign the result of the methods (substring and substr) to variables, and then write a statement that is the output of those variables concatenated with a string.</p>
+<code><pre>
+  var l = (taraString.substring(3, 7));
+  var f = (freedom.substr(0,4));
+  document.write(l + " of the " + f + "!");</pre></code>
+<p>This code results in: </p>
+    <script type="text/javascript">
+      var l = (taraString.substring(3, 7));
+      var f = (freedom.substr(0,4));
+      document.write(l + " of the " + f + "!");
+    </script>
+<br>
+<h3>Splitting a string into an array.</h3>
+<p>Another potentially useful method to use on a string.</p>
+<p>Note the split method used on the "sonsString" array variable. This allows us to identify and output the "middle son".  The "copyWithin" method ouputs the contents of the array.<code><pre>  var sonsString = "Jesse, Josh, Aaron";
+  var sonsAsArray = sonsString.split(",");
+  document.write(sonsAsArray.copyWithin());
+  document.write(" Middle son: " + sonsAsArray[1]);</pre></code></p>
+<script type="text/javascript">
+  var sonsString = "Jesse, Josh, Aaron";
+  var sonsAsArray = sonsString.split(",");
+  document.write(sonsAsArray.copyWithin());
+  document.write(" | Middle son: " + sonsAsArray[1]);
+</script>
+<hr>
+<h3>While loop with if-else conditional inside the loop.</h3>
+<script type="text/javascript">
+  var i = 100;
+  while (true) {
+    if (i >=6) {
+      i -=7;
+      document.write(i + ",");
+    } else {
+    break;
+  }
+}
+</script>
+<h3>for Loop with Arrays</h3>
+<h5>Syntax for loop code: for (initialization; conditions; change) { statements; }</h5>
+<ul>
+<script type="text/javascript">
+var lorinsSons = [];
+  lorinsSons[0] = "Jesse";
+  lorinsSons[1] = "Josh";
+  lorinsSons[2] = "Aaron";
+var leng = lorinsSons.length;
+// document.write("Total number of sons: " + leng);
+for (var index = 0; index < leng; index++) {
+  document.write("<li>" + lorinsSons[index] + "</li>");
+}
+</script>
+</ul>
+  </body>
+</html>

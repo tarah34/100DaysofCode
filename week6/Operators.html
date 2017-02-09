@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Operators</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	var composers = [];
+	var numComposersAlbums = [];
+	var dif;
+	composers[0] = prompt("Who is your favorite classical composer?", "") || "Mozart";
+	/*	Ask the user how many of this rockstar's albums she owns and store
+	the result in a variable.	*/
+	numComposersAlbums[0] = prompt("How many " + composers[0] + " albums do you own?", "");
+
+	composers[1] = prompt("And who is your next favorite classical composer?", "") || "Bach";
+	numComposersAlbums[1] = prompt("How many " + composers[1] + " albums do you own?", "");
+
+	dif = numComposersAlbums[0] - numComposersAlbums[1];
+
+</script>
+</head>
+<body>
+<!--Let the user know how many more of her favorite rockstar's albums
+	she has than of her second favorite rockstar's albums.-->
+	<p>You have <script type="text/javascript">document.write(numComposersAlbums[0]);</script>
+	albums of <script type="text/javascript">document.write(composers[0]);</script></p>
+	<p>And you have <script type="text/javascript">document.write(numComposersAlbums[1]);</script>
+	albums of <script type="text/javascript">document.write(composers[1]);</script></p>
+	<p>You have <script type="text/javascript">document.write(dif);</script>
+	</script> more <script type="text/javascript">document.write(composers[0]);</script>
+	albums than <script type="text/javascript">document.write(composers[1]);</script> albums.</p>
+<hr>
+<p>The readability of the code for this same statement below is much better.  Read via developer tools.</p>
+
+<p>
+<script type="text/javascript">
+	document.write("You have " + dif + " more albums of " + composers[0]);
+	document.write(" than you have of " + composers[1] + ".");
+</script>
+</p>
+</body>
+</html>
