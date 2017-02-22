@@ -1,0 +1,23 @@
+body {
+  background-image: url(images/2.jpg);
+  background-color: black;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  color: white;
+}
+#container {
+  background: #25375A;
+}
+#secondary1, #secondary2 {
+  background: #23528D;
+}
+#secondary1 p, #secondary2 p {
+  padding: .5em;
+}
+#header, #footer {
+  background: #4D99C2;
+  /*margin: 10px 0px;*/
+}
+#col1, #col2 {
+  background: #23528D;
+}
