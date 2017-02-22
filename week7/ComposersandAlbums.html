@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Composers and Albums</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<style media="screen">
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800italic);
+
+body {
+	font-family: 'Open Sans', arial, sans-serif;
+	background-color: slategray;
+}
+table {
+	margin:auto;
+}
+
+td, th {
+	border:1px solid #006;
+}
+
+p, h1 {
+	text-align:center;
+	font-weight: lighter;
+}
+</style>
+<script type="text/javascript">
+
+var today = new Date()
+var hourNow = today.getHours();
+var greeting;
+
+if (hourNow > 18) {
+	greeting = 'Good evening!';
+} else if (hourNow > 12) {
+	greeting = 'Good afternoon!'
+} else if (hourNow > 0) {
+	greeting = 'Good morning!'
+} else {
+	greeting = 'Welcome!'
+}
+
+	var composers = [];
+	var numComposersAlbums = [];
+	var dif;
+	composers[0] = prompt("Who is your favorite classical composer?", "") || "Mozart";
+	/*	Ask the user how many of this rockstar's albums she owns and store
+	the result in a variable.	*/
+	numComposersAlbums[0] = prompt("How many " + composers[0] + " albums do you own?", "");
+
+	composers[1] = prompt("And who is your next favorite classical composer?", "") || "Bach";
+	numComposersAlbums[1] = prompt("How many " + composers[1] + " albums do you own?", "");
+
+	dif = numComposersAlbums[0] - numComposersAlbums[1];
+
+</script>
+</head>
+<body>
+
+<h1><script type="text/javascript">
+	document.write(greeting);
+</script></h1>
+<!--Let the user know how many more of her favorite composer's albums
+	s/he has than of her second favorite composer's albums.-->
+	<p>You have <script type="text/javascript">document.write(numComposersAlbums[0]);</script>
+	albums of <script type="text/javascript">document.write(composers[0]);</script></p>
+	<p>And you have <script type="text/javascript">document.write(numComposersAlbums[1]);</script>
+	albums of <script type="text/javascript">document.write(composers[1]);</script></p>
+	<p>
+	<script type="text/javascript">
+		document.write("You have " + dif + " more albums of " + composers[0]);
+		document.write(" than you have of " + composers[1] + ".");
+	</script>
+	</p>
+<hr>
+<p></p>
+
+
+</body>
+</html>
