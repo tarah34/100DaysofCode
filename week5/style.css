@@ -1,0 +1,123 @@
+body {
+  background-color: #ccc;
+}
+h1 {
+  font-size: 1.5em;
+  width: 425px;
+  margin: 5px auto;
+  padding-bottom: 10px;
+  color: #bc5a45;
+  border-bottom: 1px solid #f18973;
+}
+form {
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 20px;
+  color: #bc5a45;
+  font-weight: bold;
+}
+fieldset {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid #f18973;
+  background-color: #f4e1d2;
+  float: left;
+  width: 48%;
+}
+#jobInfo {
+  height: 393px;
+}
+#jobInfo li {
+  position: relative;
+  display: block;
+  top: 115px;
+}
+
+legend {
+  font-family: sans-serif;
+  font-size: 1.2em;
+  font-weight: bolder;
+  font-variant: small-caps;
+  letter-spacing: .5em;
+  padding-left: 10px;
+  color: #36486b;
+}
+fieldset fieldset {
+  margin-top: 10px;
+  border-bottom: none;
+}
+fieldset fieldset legend {
+  color: #77a8a8;
+}
+form ol {
+  padding: 20px;
+}
+fieldset fieldset ol {
+  margin-top: -10px;
+}
+form p {
+  padding-left: 10px;
+  font-size: .9em;
+  font-weight: normal;
+  font-family: sans-serif;
+}
+form li {
+  list-style-type: none;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
+label {
+  width: 200px;
+  float: left;
+  font-weight: bold;
+}
+span .label {
+  font-weight: bold;
+}
+li.radioContainer label {
+  display: block;
+  float: none;
+  font-weight: normal;
+}
+select, input[type="text"], input[type="tel"], input[type="email"], input[type="date"] {
+  width: 200px;
+}
+textarea {
+  width: 400px;
+  height: 50px;
+}
+#buttons {
+  text-align: center;
+}
+#buttons input {
+  height: 100px;
+  width: 350px;
+  font-size: 1.5em;
+  color: #f18973;
+  border: 1px solid;
+  font-variant: small-caps;
+  margin: 10px;
+  background-color: #77a8a8;
+
+}
+#buttons input:hover {
+  background-color: #f18973;
+  color: #ccc;
+}
+@media screen and (max-width: 800px) {
+  form {
+    width: auto;
+  }
+  fieldset {
+    float: none;
+    margin: auto;
+    width: 440px;
+  }
+  legend {
+    width: 440px;
+  }
+  fieldset#buttons {
+    width: 450px;
+  }
+}

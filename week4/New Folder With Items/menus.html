@@ -37,12 +37,12 @@
     clear: both;
   }
 /*Now we're styling the 2nd menu with new ID. */
-  }
-  #mainMenu2 {
-    margin: 10px;
-  }
+
+
   #mainMenu2 li {
+    position: relative; /* This code allows for 2nd menu positioning. */
     display: block;
+    margin: 1px 10px;
     width: 120px;
     border: 1px solid #000;
     border-top: 0px;
@@ -54,14 +54,28 @@
   }
 
   #mainMenu2 a {
+    position: relative;  /* This code also allows for 2nd menu positioning. */
     display: block;
     padding: 3px;
     text-decoration: none;
     background-color: slateblue;
     color: white;
   }
-  #mainMenu2 a:hover {*/
+  #mainMenu2 a:hover {
     color: black;
+  }
+  #mainMenu2 li ul {
+    position: absolute; /* This positions the 2nd level menu. */
+    width: 120px;
+    left: 110px;
+    top: 5px;
+    display: none;
+  }
+  #mainMenu2 li ul li {
+    font-size: smaller;
+  }
+  #mainMenu2 li:hover ul {
+    display: block;
   }
   </style>
   <body>
@@ -81,7 +95,12 @@
   <ul id="mainMenu2">
     <li><a href="home.html">Home</a></li>
     <li><a href="services.html">Services</a></li>
-    <li><a href="products.html">Products</a></li>
+    <li><a href="products.html">Products</a>
+      <ul>
+  			<li><a href="product1.html">Product 1</a></li>
+  			<li><a href="product2.html">Product 2</a></li>
+  			<li><a href="product3.html">Product 3</a></li>
+  		</ul></li>
     <li><a href="support.html">Support</a></li>
     <li><a href="blog.html">Blog</a></li>
     <li><a href="about.html">About</a></li>

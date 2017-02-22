@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Textfield to Textfield</title>
+<script src="DateUDFs.js" type="text/javascript"></script>
+<script type="text/javascript">
+function changeBg() {
+	var userName = document.userInfoForm.userName.value;
+	var bgColor = document.userInfoForm.color.value;
+
+	document.bgColor = bgColor;
+	alert(userName + ", the background color is " + bgColor + ".");
+}
+	/*
+		Write a function called getMonth() that passes the
+		month number entered by the user to the monthAsString()
+		function in DateUDFs.js and writes the result in
+		the MonthName field.
+	*/
+	function getMonth() {
+		//We have to change the value of the input data into a variable.
+		//That variable we place inside the ()next to the function name.
+		var elemMonthNumber = document.dateForm.MonthNumber.value;
+		var cleanMonthNumber = parseInt(elemMonthNumber);
+		var month = (cleanMonthNumber >=1 && cleanMonthNumber <= 12) ? monthAsString(cleanMonthNumber) : "Bad number";
+
+		document.dateForm.MonthName.value = month
+
+
+	}
+
+</script>
+</head>
+<body>
+	<h1>First JS Form Exercise</h1>
+	<form name="userInfoForm" method="post">
+		Your name: <input type="text" name="userName"><br>
+		Background Color: <input type="text" name="color"><br>
+		<input type="button" value="Change Background" onclick="changeBg();">
+	</form>
+
+
+<h1>Month Check</h1>
+<form name="dateForm">
+	Month Number: <input type="text" name="MonthNumber" size="2">
+	<input type="button" value="Get Month" onclick="getMonth();"><br>
+	Month Name: <input type="text" name="MonthName" size="10">
+</form>
+</body>
+</html>

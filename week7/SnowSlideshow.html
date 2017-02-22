@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Snow Slide Show</title>
+<style media="screen" type="text/css">
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/montserrat/Montserrat-Light.otf');
+  src: url('/montserrat/Montserrat-ExtraLight.otf');
+  src: url('/montserrat/MontserratAlternates-Light.otf');
+  src: url('/montserrat/MontserratAlternates-ExtraLight.otf');
+  src: url('/montserrat/MontserratAlternates-Thin.otf');
+  }
+  *, input {
+    font-family: Montserrat-Light, sans-serif;
+}
+#buttons {
+  height: 100px;
+  width: 350px;
+  font-size: 1.5em;
+  border: 1px solid;
+  background-color: #slategray;
+  font-variant: small-caps;
+  margin: 10px;
+
+}
+footer {
+  padding-top: 20px;
+}
+</style>
+<script type="text/javascript">
+var showWin;
+
+function startShow() {
+  showWin = window.open("popup-snowshow.html", "showWin", "height=800,width=1000,left=20,top=20");
+  showWin.focus();
+}
+
+</script>
+  </head>
+  <body>
+    <div style="text-align:center;">
+    <h1>Snow Slide Show</h1>
+    <button id="buttons" onclick="startShow()">Start Show</button>
+    </div>
+    <footer style="text-align:center;" id="footer">Copyright 2017, No rights reserved. Feel free to use.</footer>
+  </body>
+</html>

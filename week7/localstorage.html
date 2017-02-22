@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Local Storage</title>
+<!-- Prompt user to enter their name, then storage that information into local storage.
+Then use that value (stored) to have it remembered and retrieved during subsequent page loads. -->
+    <script type="text/javascript">
+      // A function to determine whether browser can support local storage:
+      function supportsLocalStorage() {  //This will return a boolean value.
+// "Will put inside a try catch. That way the older browsers won't complain, if throws an exception."
+ // What is this?  This has not been explained in the course.
+      try {
+  //if broswer supports local storage, it will exist in the window or global name space.
+        return (typeof window.localStorage != 'undefined' && window['localStorage'] != null);  //if this works,
+        // it will return true out of supportsLocalStorage function.
+      } catch (e) {
+        return false; //assuming if i do throw an exception, the browser doesn't support local storage.
+      }
+      }
+//Now get and set a name.   
+      function setName(name) {
+        localStorage['name'] = name;
+      }
+      function getName() {
+        return localStorage.name;
+      }
+      if (supportsLocalStorage() && getName() == null) {
+        setName(window.prompt("Enter your name"));
+        }
+      window.alert(supportsLocalStorage() + " this browser supports local storage"); //Does or doesn't support local storage./..
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+    if (supportsLocalStorage()) { //This is because will get an error in IE7.
+      document.write("Your name is: " + getName());
+    }
+    </script>
+  </body>
+</html>
