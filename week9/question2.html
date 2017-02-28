@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>History Test: Question 2</title>
+<script type="text/javascript">
+	history.go(1); // This prevents user from being able to go back.
+	var s = location.search; //Grab the value out of the window.location object property.
+	// ?answer=Lincoln as string starts in 7th position of the string. but we really want 8 so +1.
+	var start = s.indexOf('=') + 1;; //Start looking after = in URL address field.
+ //BTW, It's handy to alert or console log these variables to see what those values are as you write the code.
+	var answer = s.substring(start);
+	var response = (answer == "Washington") ? "Right!" : "Wrong";
+</script>
+</head>
+<body>
+	<p style="font-weight:bold;">
+		<script type="text/javascript">
+			document.write("Your answer was: " + answer + ". " + response);
+		</script>
+	</p>
+
+<form action="question3.html">
+	<!-- Form action will append submitted form data in the page address field (URL) -->
+	Which of the presidents below was not assassinated?<br>
+	<input type="radio" name="answer" value="Lincoln">Abraham Lincoln<br>
+	<input type="radio" name="answer" value="McKinley">William McKinley<br>
+	<input type="radio" name="answer" value="Washington">George Washington<br>
+	<input type="radio" name="answer" value="Kennedy">John F. Kennedy<br>
+<!-- regarding "SUBMIT" - very important -->
+<!-- GET is default method when submitting form data - data displays in address field (URL) -->
+	<input type="submit" value="Answer"><br>
+	<!-- The onclick will updating the href property of the window.location object. -->
+	<input type="button" onclick="location.href='start-quiz.html';" value="Start Over">
+</form>
+</body>
+</html>

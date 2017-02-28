@@ -1,23 +1,63 @@
+/*CSS to assure backward compatibility for block level elements.*/
+/*￼header, footer, aside, section, article, nav, hgroup {
+ display: block;
+ */
 body {
   background-image: url(images/bluenotes.jpg);
   background-color: black;
   background-repeat: repeat-x;
   background-position: bottom;
+  background-attachment: fixed;
   color: white;
 }
 #container {
   background: #25375A;
 }
-#secondary1, #secondary2 {
-  background: #23528D;
-}
-#secondary1 p, #secondary2 p {
-  padding: .5em;
-}
+
 #header, #footer {
-  background: #4D99C2;
-  /*margin: 10px 0px;*/
+  background-color: #4D99C2;
+  text-align: center;
 }
-#col1, #col2 {
-  background: #23528D;
+
+#navigator {
+  padding: 3px;
 }
+
+#tromboneimage1 {
+  margin: 5px 5px 5px 0px;
+  padding: 3px;
+}
+
+#tromboneimage2 {
+  position: relative;
+  top: -32px;
+  margin: 5px 5px 5px 0px
+  padding: 2px;
+  width: 100%;
+}
+#tromboneimage3 {
+  margin: 5px 0px 5px 5px;
+  padding: 3px;
+}
+ /*#imagecenter div {
+   position: relative;
+   bottom: 1px;*/
+ /*}*/
+#funfacts p, #row3 p {
+  background: black;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#row4 {
+  padding: 3px;
+  margin-right: 0px;
+}
+img, iframe {
+  border: 1px solid black;
+  border: none;
+  border-radius: 5px;
+}
+a {
+  color: white;
+  }

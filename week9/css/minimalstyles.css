@@ -1,0 +1,22 @@
+* {
+    margin: 0; padding: 0; border: 0;
+    font-family: Montserrat-Light, sans-serif;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-Light.otf');
+  src: url('fonts/montserrat/Montserrat-ExtraLight.otf');
+  src: url('fonts/montserrat/MontserratAlternates-Light.otf');
+  src: url('fonts/montserrat/MontserratAlternates-ExtraLight.otf');
+  src: url('fonts/montserrat/MontserratAlternates-Thin.otf');
+  }
+body {
+  background-color: lightgray;
+  text-align: center;
+  padding-bottom: 15px;
+}
+video, iframe {
+display: block;
+align-items: center;
+margin: auto;
+}

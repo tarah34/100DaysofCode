@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/default.css">
+    <title>Audio & Video HTML5</title>
+    <!-- This line of code <meta> sets up the media query. -->
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="header">
+        <h1>Multimedia Page</h1>
+      </header>
+      <section id="main">
+          <!-- New div for 3rd column -->
+        <div id="inner">
+          <nav id="menu" class="column">
+            <h2>Menu</h2>
+            <p>This menu column is fixed.</p>
+          </nav>
+          <aside id="sidebar" class="column">
+            <h2>Sidebar</h2>
+            <p>This column is fixed.</p>
+            <p>This column is fixed.</p>
+            <p>This column is fixed.</p>
+            <p>This column is fixed.</p>
+            <p>This column is fixed.</p>
+          </aside>
+          <article id="content" class="columncenter">
+            <h2>Content</h2>
+            <video controls="controls" autoplay type="video/mp4" height="408" width="720">
+              <source src="https://youtu.be/OBfQ_t3bkVU" type="video/mp4">
+            </video>
+            <p>Fluid column. Column is fluid. Lorem ipsum dolor sit amet...</p>
+            <video controls  type="video/mp4" height="408" width="720">
+              <source src="../media/Benplaystrombone.mp4" />
+            </video>
+          </article>
+          <div class="clearer"></div>
+        </div>
+      </section>
+      <footer id="footer">Copyright 2017, No rights reserved. Feel free to use.</footer>
+    </div>
+  </body>
+</html>

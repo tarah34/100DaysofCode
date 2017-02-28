@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Video Minimal page</title>
+    <link rel="stylesheet" href="css/minimalstyles.css">
+  </head>
+  <body>
+<h1>HTML5 Video</h1>
+<!-- Up a directory (folder) is ../ -->
+<video controls poster="../media/trombonist.jpg" width="560">
+  <source src="../media/Benplaystrombone.mp4" type="video/mp4">
+  <source src="../media/Benplaystrombone.webm" type="video/webm">
+    <p class="warning">Your web browser doesn't support the video tag and thus can view the trombone video.</p>
+</video>
+<br>
+<h2>iFrame element</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OBfQ_t3bkVU?rel=0" frameborder="0" allowfullscreen></iframe>
+<br>
+<h2>Trombone Audio file</h2>
+<audio controls loop>
+  <source src="../media/trombone6.5s.mp3" type="audio/mp3">
+</audio>
+  </body>
+</html>
