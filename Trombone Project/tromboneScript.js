@@ -35,11 +35,6 @@ function play3() {
 
 
 
-//Runtime and Duration functions
-function totalTime() {
-  var T = document.getElementById("trombone-audio").duration;
-  document.getElementById("duration").innerHTML = T;
-}
 
 
 //Using the DOM to collect info and report it in footer.

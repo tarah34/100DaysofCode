@@ -44,6 +44,9 @@ body {
   padding: 2px;
   width: 100%;
 }
+#instruct {
+  text-align: center;
+}
 #tromboneimage3 {
   margin: 5px 0px 5px 5px;
   padding: 3px;
@@ -78,8 +81,6 @@ img, iframe {
 #Benlikes {
   font-size: 1.25em;
 }
-
-
 #pageinfo {
 text-align: left;
 color: #25375A;
@@ -88,3 +89,7 @@ font-size: smaller;
 a {
   color: white;
   }
+#footer {
+  border: none;
+  border-radius: 5px 5px 0px 0px;
+}
