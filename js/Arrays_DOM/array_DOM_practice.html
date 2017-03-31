@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset960gs.css">
+    <link rel="stylesheet" href="css/960.css">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/defaultarray.css">
+￼
+<!-- Code so IE8 treats new elements properly. -->
+<!--[if lt IE 9]>
+    <script src="html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Arrays & DOM Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">   </script>
+<!-- Add a media query before finishing this project     -->
+  </head>
+  <body>
+    <div id="container">
+      <h1>Hello World!</h1>
+      <div id="bgColor" class="grid_12">
+        <h3>Click on a color button to see what happens.</h3>
+        <div  class="grid_3 alpha">
+          <p><button id="Spruce" class="button" name="spruce" onclick="document.body.style.backgroundColor = colors[0];">Shaded Spruce #005960</button></p>
+        </div>
+        <div  class="grid_3">
+          <p><button id="Maple" class="button" name="maple" onclick="document.body.style.backgroundColor = colors[1];">Autumn Maple #D2691E</button></p>        </div>
+        <div  class="grid_3">
+          <p><button id="Lime" class="button" name="lime" onclick="document.body.style.backgroundColor = colors[2];">Golden Lime #9C9A40</button></p>        </div>
+        <div  class="grid_3 omega">
+          <p><button id="Marina" class="button" name="marina" onclick="document.body.style.backgroundColor = colors[3];">Marina #4F84C4</button></p>        </div>
+      </div>
+      <hr>
+      <div id="listDiv" class="grid_12">
+        <div id="list" class="grid_4">
+          <h3>A list of things:</h3>
+        <ul>
+          <li id="one">Honey</li>
+          <li id="two">Yoghurt</li>
+          <li id="three">Pine tree</li>
+          <li id="four">Mountain</li>
+        </ul>
+        <p>4 Items (Honey-Mountain) are written in the .html file. But, the first and last items were added with JavaScript.</p>
+        </div>
+      </div>
+      <hr>
+    </div> <!--End of container div-->
+<script type="text/javascript" src="js/arrays_DOM_manipulation.js"></script>
+  </body>
+</html>

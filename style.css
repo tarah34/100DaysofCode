@@ -1,0 +1,19 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800italic);
+
+body {
+	font-family: 'Open Sans', arial, sans-serif;
+	background-color: slategray;
+}
+table {
+	margin:auto;
+}
+
+td, th {
+	border:1px solid #006;
+}
+
+p, h1 {
+	text-align:center;
+	font-weight: lighter;
+}

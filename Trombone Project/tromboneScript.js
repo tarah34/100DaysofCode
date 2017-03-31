@@ -17,6 +17,31 @@ greet.textContent = greeting;
 // Do I have to create the variable greet?  Or can I just write:
 // document.getElementById('greeting').textContent = greeting; ?
 
+
+//Play, Pause, Restart Buttons as functions/JS
+//(Must delete "controls" attribute from <audio> element?)
+function play1() {
+  var audio1 = document.getElementById("trombone-audio");
+  audio1.play();
+}
+function play2() {
+  var audio2 = document.getElementById("trombone-audio2");
+  audio2.play();
+}
+function play3() {
+  var audio3 = document.getElementById("trombone-audio3");
+  audio3.play();
+}
+
+
+
+//Runtime and Duration functions
+function totalTime() {
+  var T = document.getElementById("trombone-audio").duration;
+  document.getElementById("duration").innerHTML = T;
+}
+
+
 //Using the DOM to collect info and report it in footer.
 var msg = "<p><b>Page title: </b>" + document.title + "<br />";
 msg += "<b>Page address: </b>" + document.URL + "<br />";

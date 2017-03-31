@@ -3,15 +3,17 @@
  display: block;
  */
 body {
+  background: black url(../images/bluenotes.jpg) repeat-x bottom fixed;
+  /*background-color: black;
   background-image: url(images/bluenotes.jpg);
-  background-color: black;
   background-repeat: repeat-x;
   background-position: bottom;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
   color: white;
 }
+
 #container {
-  background: #25375A;
+  background-color: #25375A;
 }
 
 #header, #footer {
@@ -39,10 +41,7 @@ body {
   margin: 5px 0px 5px 5px;
   padding: 3px;
 }
- /*#imagecenter div {
-   position: relative;
-   bottom: 1px;*/
- /*}*/
+
 #funfacts p, #row3 p {
   background: black;
   padding: 3px;
@@ -57,11 +56,6 @@ img, iframe {
   border: 1px solid black;
   border: none;
   border-radius: 5px;
-}
-#pageinfo {
-text-align: left;
-color: #25375A;
-font-size: smaller;
 }
 a {
   color: white;

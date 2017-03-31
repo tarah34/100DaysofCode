@@ -1,0 +1,48 @@
+/*CSS to assure backward compatibility for block level elements.*/
+￼header, footer, aside, section, article, nav, hgroup {
+ display: block;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800italic);
+
+@media screen and (max-width: 770px) {
+
+div>grid_3 {
+  float: left;
+  width: 98%;
+  padding: 1%;
+}
+ }
+
+body {
+	font-family: 'Open Sans', arial, sans-serif;
+	background-color: slategray;
+  font-size: 1em;
+}
+
+p, h1 {
+	text-align:center;
+	font-weight: lighter;
+  font-family: 'Open Sans', arial, sans-serif;
+}
+.button {
+  height: 120px;
+  width: 220px;
+  font-size: 1.5em;
+  color: white;
+  border: 1px solid;
+  font-variant: small-caps;
+  margin: 10px;
+}
+#Spruce {
+background-color: #005960;
+}
+#Maple {
+background-color: #D2691E;
+}
+#Lime {
+background-color: #9C9A40;
+}
+#Marina {
+background-color: #4F84C4;
+}

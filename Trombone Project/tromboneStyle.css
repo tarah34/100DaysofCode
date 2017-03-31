@@ -27,10 +27,19 @@ body {
   margin: 5px 5px 5px 0px;
   padding: 3px;
 }
-
+#caption {
+  width:80%;
+  height:20%;
+  margin:30% 10%;
+  padding-top:15%;
+  text-align: center;
+  background:#fff;
+  opacity:0.2;
+  filter:alpha(opacity=20);
+}
 #tromboneimage2 {
   position: relative;
-  top: -32px;
+  top: -22px;
   margin: 5px 5px 5px 0px
   padding: 2px;
   width: 100%;
@@ -43,6 +52,14 @@ body {
    position: relative;
    bottom: 1px;*/
  /*}*/
+
+#tromboneimage1:hover, #tromboneimage2:hover, #tromboneimage3:hover {
+  opacity: 0.6;
+  filter:alpha(opacity=60);
+}
+figcaption {
+  text-align: center;
+}
 #funfacts p, #row3 p {
   background: black;
   padding: 3px;
@@ -58,6 +75,11 @@ img, iframe {
   border: none;
   border-radius: 5px;
 }
+#Benlikes {
+  font-size: 1.25em;
+}
+
+
 #pageinfo {
 text-align: left;
 color: #25375A;

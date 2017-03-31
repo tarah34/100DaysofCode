@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trombone Page</title>
+    <link rel="stylesheet" href="css/reset960gs.css">
+    <link rel="stylesheet" href="css/960.css">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="tromboneStyle.css">
+    <!-- Eventually add script for jQuery -->
+    <!-- Code so IE8 treats new elements properly. -->
+    <!--[if lt IE 9]>
+        <script src="html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <div id="container" class="container_12">
+      <div id="header" class="grid_12">
+        <h1 id="greeting">Welcome!</h1>
+
+        <h3>Ben's Trombone Page</h3>
+      </div> <!--end of header-->
+      <!-- <div id="navigator"class="grid_12">
+        <p>Menu with Link 1, Link 2, Link 3, Link 4</p>
+      </div> -->
+
+      <div id="imagecontainer" class="grid_12">
+        <div id="imageleft" class="grid_4 alpha">
+          <figure>
+            <img src="../media/tromboneOnStand.jpg" id="tromboneimage1" width="245px" onclick="play1();" alt="Trombone on stand" />
+            <figcaption>Click on image to hear the trombone!</figcaption>
+          </figure>
+          <!-- <img src="../media/tromboneOnStand.jpg" id="tromboneimage1" width="245px" onclick="play();"> -->
+        </div>
+        <div id="imagecenter" class="grid_4">
+          <div id="instruct"><h5>Click on the left, center or right images and see what happens!</h5><br />
+          </div>
+          <figure>
+            <img src="../media/tromboneBellBrass.jpg" id="tromboneimage2" width="245px" onclick="play2();" alt="Trombone bell image" />
+            <figcaption>Click on image to hear the trombone!</figcaption>
+          </figure>
+          <!-- <img src="../media/tromboneBellBrass.jpg" id="tromboneimage2" width="245px"> -->
+        </div>
+        <div id="imageright" class="grid_4 omega">
+          <figure>
+            <img src="../media/tromboneAbove.jpg" id="tromboneimage3" width="245px" onclick="play3();" alt="Trombone image" />
+            <figcaption>Click on image to hear the trombone!</figcaption>
+          </figure>
+          <!-- <img src="../media/tromboneAbove.jpg" id="tromboneimage3" width="245px" align="right"> -->
+          </div>
+      </div>
+      <div id="audiotest" class="grid_12">
+        <p>This is where I'm placing audio...</p>
+        <audio id="trombone-audio">
+          <source src="../media/trombone3.7s.mp3" type="audio/mpeg">
+          <source src="../media/trombone3.7s.ogg" type="audio/ogg">
+        </audio>
+        <audio id="trombone-audio2">
+          <source src="../media/tromboneMiMi.mp3" type="audio/mpeg">
+          <source src="../media/tromboneMiMi.ogg" type="audio/ogg">
+        </audio>
+        <audio id="trombone-audio3" controls>
+          <source src="../media/trombone6.5s.mp3" type="audio/mpeg">
+            <source src="../media/trombone6.5.ogg" type="audio/ogg">
+        </audio>
+        <br>
+        <button id="cmd-play" type="button" title="play" onclick="play();">Play</button>
+        <button id="cmd-pause" title="pause">Pause</button>
+        <button id="cmd-restart" title="restart">Restart</button>
+        <br>
+        <div id="time-display">
+          <p>Time: <output id="runtime">0</output> seconds.</p>
+          <p>Audio Duration: <output id="duration">0</output> seconds.</p>
+        </div>
+      </div>
+      <div id="funfacts" class="grid_12">
+        <div id="funfactsleft1" class="grid_3 alpha">
+          <p>Trombone (n.) from Italian <em>tromba</em> 'trumpet'. The trombone was thought to be a type of trumpet.</p>
+        </div>
+        <div id="funfactsleft2" class="grid_3">
+          <p>Fun fact: The adult voices in Charlie Brown are sound effect made by a trombone.</p>
+        </div>
+        <div id="funfactsright3" class="grid_3">
+          <p>Fun fact: The trombone is said to be the voice of god when he is not happy.</p>
+        </div>
+        <div id="funfactsright4" class="grid_3 omega">
+          <p>Fun fact: Wonder what was the first gig to use the trombone?  A wedding!</p>
+        </div>
+      </div>
+      <div id="row3" class="grid_12">
+        <div class="grid_8 alpha">
+          <iframe width="600" height="315" src="https://www.youtube.com/embed/OBfQ_t3bkVU?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="grid_4 omega">
+          <p id="Benlikes">Ben enjoys the trombone for:</p>
+          <p>the quality of the bass sound</p>
+          <p>preferring to play root harmony more than melody in ensembles</p>
+          <p>the challenge of changing positions of the slide to create different sounds</p>
+        </div>
+      </div>
+      <div id="row4" class="grid_12">
+        <div class="grid_8 alpha">
+          <h5>External links</h5>
+          <p>
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Trombone" target="_blank">Wikipedia</a></li>
+            <li><a href="https://www.youtube.com/watch?v=EaPmysTfVFI&app=desktop" target="_blank">Best of Brass, Brilliant Trombone Solos</a></li>
+            <li><a href="https://www.youtube.com/watch?v=k9YUi3UhEPQ&app=desktop" target="_blank">Trombone Shorty At Age 13</a></li>
+          </ul></p>
+        </div>
+        <div class="grid_4 omega">
+          <img src="../media/tromboneBellFace.jpg"  width="285"/>
+        </div>
+      </div>
+
+
+
+      <div id="footer" class="grid_12">
+        <p>"Without music, life would be a mistake."</p>
+        <div id="pageinfo" class=""><p>Insertion</p></div>
+      </div>
+    </div> <!--end of container-->
+<script type="text/javascript" src="tromboneScript.js"></script>
+  </body>
+</html>

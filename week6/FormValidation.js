@@ -1,4 +1,5 @@
 /*
+File links to: /Users/tara/Documents/WebDev/Webucator/100DaysofCode/week7/Register2.html
 	Function Name: checkLength
 	Arguments: text,min?,max?
 	Returns:
